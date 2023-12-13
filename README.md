@@ -66,7 +66,20 @@ flags:
   -h, --help  show this help message and exit                    
 
 optional arguments:
-  -x, --opts  RDS file containing argument values                                                
+  -x, --opts  RDS file containing argument values     
+
+## vcf_processor.py
+usage: vcf_processor.py [-h] input_file output_file                      
+
+Process VCF file and generate output                                    
+
+positional arguments:                            
+  input_file   Input VCF file                                  
+  output_file  Output file                            
+
+options:
+  -h, --help   show this help message and exit                                    
+  
   ## Example
 
   ## Output
