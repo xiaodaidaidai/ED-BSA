@@ -15,7 +15,7 @@ Using BSA mixed pool sequencing data for ED analysis and plotting
 https://github.com/xiaodaidaidai/ED.git
 ## Usage
 ## BSA_ED.py        
-"'usage: BSA_ED.py [-h] -vcf VCF -bulk1 BULK1 -bulk2 BULK2 [-power POWER] [-minDP MINDP] [-maxDP MAXDP] [-window WINDOW] [-step STEP] -outpre OUTPRE
+1~ usage: BSA_ED.py [-h] -vcf VCF -bulk1 BULK1 -bulk2 BULK2 [-power POWER] [-minDP MINDP] [-maxDP MAXDP] [-window WINDOW] [-step STEP] -outpre OUTPRE
 
 Calculate ED power from VCF file
 
