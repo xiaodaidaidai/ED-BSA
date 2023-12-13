@@ -19,13 +19,9 @@ usage: BSA_ED.py [-h] -vcf VCF -bulk1 BULK1 -bulk2 BULK2 [-power POWER] [-minDP 
 Calculate ED power from VCF file
 
 options:
-  -h, --help      show this help message and exit
-  -vcf VCF        Input VCF file
-  -h, --help            show this help message and exit  
-  --bam BAM             input the bam file
-  -h, --help      show this help message and exit
-  -vcf VCF        Input VCF file
-
+  -h, --help      show this help message and exit  
+  --bam BAM             input the bam file  
+  --name NAME, -n NAME  prefix of output files  
 
   ## Example
 
