@@ -20,6 +20,7 @@ Calculate ED power from VCF file
 
 options:
   -h, --help      show this help message and exit
+  
   -vcf VCF        Input VCF file
   -bulk1 BULK1    Sample name for bulk1
   -bulk2 BULK2    Sample name for bulk2
