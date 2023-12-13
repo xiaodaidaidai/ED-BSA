@@ -88,8 +88,12 @@ options:
   -h, --help   show this help message and exit                                    
 ```
 
-## Example 1：
+## Example 1：Calculate ED power from VCF file
+```
+python BSA_ED.py -vcf all.clean.snp.qtlseq.vcf -bulk1 S-pool -bulk2 T-pool -power 5 -minDP 4 -maxDP 100 -outpre all.clean.snp.BSA-ED
+```
 
+## Example 2：
 
   ## Output
   ### example output(.result)
