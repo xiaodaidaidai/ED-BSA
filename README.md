@@ -23,6 +23,8 @@ options:
   -vcf VCF        Input VCF file
   -h, --help            show this help message and exit  
   --bam BAM             input the bam file
+  -h, --help      show this help message and exit
+  -vcf VCF        Input VCF file
 
 
   ## Example
