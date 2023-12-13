@@ -19,7 +19,7 @@ usage: BSA_ED.py [-h] -vcf VCF -bulk1 BULK1 -bulk2 BULK2 [-power POWER] [-minDP 
 
 Calculate ED power from VCF file
 
-options:
+options:                                  
   -h, --help      show this help message and exit                                  
   -vcf VCF        Input VCF file                        
   -bulk1 BULK1    Sample name for bulk1                                    
@@ -37,7 +37,7 @@ usage: BSA_ED_sliding.R [--] [--help] [--opts OPTS] ED window chr
 
 Mapping the distribution of ED correlation values on chromosomes
 
-positional arguments:
+positional arguments:                          
   ED          Input: ED.tsv                  
   window      Input: sliding_window.tsv                          
   chr         Input: Chromosome list file (chr.len)                        
