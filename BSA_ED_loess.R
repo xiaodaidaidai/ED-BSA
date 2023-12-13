@@ -1,7 +1,7 @@
 library(argparser, quietly = TRUE)
 
 # Create a parser
-p <- arg_parser("Generate SNP-index figure for mutmap.")
+p <- arg_parser("Generate ED figure")
 
 # Add command line arguments
 p <- add_argument(p, "ED", help = "Input: ED.tsv", type = "character")
