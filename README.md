@@ -21,7 +21,7 @@ Calculate ED power from VCF file
 options:
   -h, --help      show this help message and exit  
   -vcf VCF        Input VCF file 
-  --name NAME, -n NAME  prefix of output files  
+  --bam BAM             input the bam file   
 
   ## Example
 
