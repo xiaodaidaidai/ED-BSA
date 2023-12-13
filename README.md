@@ -20,10 +20,10 @@ usage: BSA_ED.py [-h] -vcf VCF -bulk1 BULK1 -bulk2 BULK2 [-power POWER] [-minDP 
 Calculate ED power from VCF file
 
 options:                                  
-    -h, --help      show this help message and exit                                  
-    -vcf VCF        Input VCF file                        
-    -bulk1 BULK1    Sample name for bulk1                                    
-  -bulk2 BULK2    Sample name for bulk2                                        
+  -h, --help      show this help message and exit                
+  -vcf VCF        Input VCF file            
+  -bulk1 BULK1    Sample name for bulk1                                                    
+  -bulk2 BULK2    Sample name for bulk2                                                    
   -power POWER    ED power (default is 5)                                                              
   -minDP MINDP    Minimum depth of variation (per sample) (default is 4)                                    
   -maxDP MAXDP    Maximum depth of variation (per sample) (default is 250)                                
@@ -48,7 +48,25 @@ flags:
   -h, --help  show this help message and exit                  
 
 optional arguments:                        
-  -x, --opts  RDS file containing argument values                            
+  -x, --opts  RDS file containing argument values  
+
+## BSA_ED_loess.R                            
+usage: BSA_ED_loess.R [--] [--help] [--opts OPTS] ED chr threshold                                                                        
+       outpre                                                
+
+Generate ED figure                                                                        
+
+positional arguments:                                                            
+  ED          Input: ED.tsv                                                                        
+  chr         Input: Chromosome length file (chr.len)                                        
+  threshold   Input: Threshold of confidence interval (99 or 95)                                                    
+  outpre      Output prefix                                            
+
+flags:
+  -h, --help  show this help message and exit                    
+
+optional arguments:
+  -x, --opts  RDS file containing argument values                                                
   ## Example
 
   ## Output
