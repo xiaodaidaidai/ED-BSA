@@ -30,7 +30,29 @@ options:
   -step STEP      Step size (kilobases) (default is 100)
   -outpre OUTPRE  Output file prefix
 
+usage: AtacAmp.py [-h] [--bam BAM] [--name NAME] [--isize_value ISIZE]
+                  [--interval_size INTERVAL] [--mapq MAQP] [--mode {0,1,2}]
+                  [--discbk DISCBK] [--type LIB] [--gtf GTF]
+                  [--threads THREADS]
 
+optional arguments:
+  -h, --help            show this help message and exit  
+  --bam BAM             input the bam file  
+  --name NAME, -n NAME  prefix of output files  
+  --isize_value ISIZE, -i ISIZE  
+                        judge a pair of reads whether is discordant  
+  --interval_size INTERVAL, -s INTERVAL  
+                        size of interval when compute breakpoint nearby coverage  
+  --mapq MAQP, -q MAQP  
+  reads maqp threshold  
+  --mode {0,1,2}, -m {0,1,2}  
+                        choose the analysis mode,0/1/2  
+  --discbk DISCBK, -d DISCBK  
+                        if you choose mode 1,you need to input discbk file  
+  --type LIB          
+  choose library:sc/bulk  
+  --gtf GTF             gtf file  
+  --threads THREADS     threads  
   ## Example
 
   ## Output
