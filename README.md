@@ -14,6 +14,7 @@ Using BSA mixed pool sequencing data for ED analysis and plotting
 ### Github source code:
 https://github.com/xiaodaidaidai/ED.git
 ## Usage
+## BSA_ED.py        
 usage: BSA_ED.py [-h] -vcf VCF -bulk1 BULK1 -bulk2 BULK2 [-power POWER] [-minDP MINDP] [-maxDP MAXDP] [-window WINDOW] [-step STEP] -outpre OUTPRE
 
 Calculate ED power from VCF file
@@ -30,6 +31,24 @@ options:
   -step STEP      Step size (kilobases) (default is 100)                                        
   -outpre OUTPRE  Output file prefix                               
 
+## BSA_ED_sliding.R
+usage: BSA_ED_sliding.R [--] [--help] [--opts OPTS] ED window chr
+       threshold outpre
+
+Mapping the distribution of ED correlation values on chromosomes
+
+positional arguments:
+  ED          Input: ED.tsv                  
+  window      Input: sliding_window.tsv                          
+  chr         Input: Chromosome list file (chr.len)                        
+  threshold   Input: Threshold of confidence interval (99 or 95)                        
+  outpre      Output prefix                          
+
+flags:
+  -h, --help  show this help message and exit                  
+
+optional arguments:                        
+  -x, --opts  RDS file containing argument values                            
   ## Example
 
   ## Output
