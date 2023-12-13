@@ -9,3 +9,6 @@ Using BSA mixed pool sequencing data for ED analysis and plotting
 * Output
 * License
 ## Backgroud
+
+## Install
+### Github source code:
