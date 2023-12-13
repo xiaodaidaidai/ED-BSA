@@ -32,7 +32,9 @@ options:
   -step STEP      Step size (kilobases) (default is 100)                                        
   -outpre OUTPRE  Output file prefix                              
 ```
+
 ## BSA_ED_sliding.R
+```
 usage: BSA_ED_sliding.R [--] [--help] [--opts OPTS] ED window chr
        threshold outpre
 
@@ -50,8 +52,10 @@ flags:
 
 optional arguments:                        
   -x, --opts  RDS file containing argument values  
+```
 
-## BSA_ED_loess.R                            
+## BSA_ED_loess.R    
+```
 usage: BSA_ED_loess.R [--] [--help] [--opts OPTS] ED chr threshold                                                                        
        outpre                                                
 
@@ -68,8 +72,10 @@ flags:
 
 optional arguments:
   -x, --opts  RDS file containing argument values     
+```
 
 ## vcf_processor.py
+```
 usage: vcf_processor.py [-h] input_file output_file                      
 
 Process VCF file and generate output                                    
@@ -80,7 +86,8 @@ positional arguments:
 
 options:
   -h, --help   show this help message and exit                                    
-  
+```
+
   ## Example
 
   ## Output
