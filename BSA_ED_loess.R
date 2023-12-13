@@ -130,4 +130,5 @@ pbulk <- ggplot(data = LoessOut, aes(x = V2, y = V3)) +
   )
 
 # Save plots
-ggsave(paste(outpre, "plot-EDloessAICc.pdf",
+ggsave(paste(outpre, "plot-EDloessAICc.pdf", sep = "."), plot = pbulk, device = "pdf", width = 10,height = 5 )
+ggsave(paste(outpre, "plot-EDloessAICc.png", sep = "."), plot = pbulk, device = "png", width = 10,height = 5 )
