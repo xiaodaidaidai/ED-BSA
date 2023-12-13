@@ -14,7 +14,7 @@ def parse_vcf_header(vcf_file):
             col2 = header.index(args.bulk2)
             return col1, col2
     return col1, col2
-
+    
 def calculate_edpower(ad1, ad2, power):
     dp1 = sum(ad1)
     dp2 = sum(ad2)
@@ -27,14 +27,13 @@ def calculate_edpower(ad1, ad2, power):
 
     sqr_diff = [(freq1[i] - freq2[i]) ** 2 for i in range(len(ad1))]
     ed = math.sqrt(sum(sqr_diff))
-
     ed_power = ed ** power
     return ed_power
 
 def main():
     with open(args.vcf, 'r') as vcf_file, open(args.outpre + f".snp_EDpower{args.power}.tsv", 'w') as snp_output:
         col1, col2 = parse_vcf_header(vcf_file)
-
+        
         snp_output.write("CHROM\tPOS\t{0}_AD\t{1}_AD\tED{2}\n".format(args.bulk1, args.bulk2, args.power))
         print(args.bulk1 + ": " + str(col1) + "  " + args.bulk2 + ": " + str(col2))
         ed_dict = defaultdict(dict)
