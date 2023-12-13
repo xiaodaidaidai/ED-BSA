@@ -93,8 +93,17 @@ options:
 python BSA_ED.py -vcf all.clean.snp.qtlseq.vcf -bulk1 S-pool -bulk2 T-pool -power 5 -minDP 4 -maxDP 100 -outpre all.clean.snp.BSA-ED
 ```
 
-## Example 2：
+## Example 2：Mapping the distribution of ED correlation values on chromosomes
+```
+Rscript BSA_ED_sliding.R \
+    all.clean.snp.BSA-ED.snp_EDpower5.tsv \
+    all.clean.snp.BSA-ED.sliding_EDpower5.tsv \
+    chr.len \
+    99 \
+    all.clean.snp.BSA-ED5
+```
 
+## Example 3：
   ## Output
   ### example output(.result)
 
